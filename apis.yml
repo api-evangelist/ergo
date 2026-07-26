@@ -1,7 +1,28 @@
 aid: ergo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ergo.png
 name: Ergo
-description: Ergo is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Ergo (ergo Offers, Inc.) is a New York-based e-commerce pricing company
+  that lets online shoppers name their own price. Its flagship product is a Shopify
+  app that adds a "Make an Offer with ergo" button to product pages: a customer submits
+  the price they are willing to pay and how long they are willing to wait, and the
+  merchant accepts or rejects the offer from a backend dashboard. Beyond bartering,
+  Ergo captures true willingness-to-pay data and turns it into pricing analytics and
+  a price-discovery and optimization tool, helping retailers clear excess inventory
+  and reduce blanket discounting. Founded and led by CEO Claire Stepanek (previously
+  supply chain at Apple), Ergo raised a $1.5M pre-seed round in October 2023 led by
+  Anthemis with Wischoff Ventures. Ergo does not currently publish a public developer
+  API; this profile captures its company identity.'
 url: https://raw.githubusercontent.com/api-evangelist/ergo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- E-Commerce
+- Retail
+- Pricing
+- Shopify
+- Analytics
+- Merchandising
+- Pricing Optimization
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ergo-domain-security.yml
+- type: Website
+  url: https://www.ergooffers.com/
+- type: PrivacyPolicy
+  url: https://www.ergooffers.com/legal/privacy-policy
+- type: Support
+  url: https://www.ergooffers.com/#faqs
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ergo-offers
+- type: AppStore
+  url: https://apps.shopify.com/ergo
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
